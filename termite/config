@@ -1,0 +1,4 @@
+[options]
+font = Input Mono 11
+[colors]
+background = rgba(0,0,5,0.5)

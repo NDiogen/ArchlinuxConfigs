@@ -1,0 +1,14 @@
+{
+    "languageserver": {
+        "ccls": {
+            "command": "ccls",
+            "args": ["--log-file=/tmp/lsp-ccls.log"],
+            "filetypes": ["c", "cpp", "objc", "objcpp"],
+            "rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+            "initializationOptions": {
+              "cacheDirectory": "/tmp/ccls"
+            }
+        }
+    },
+    "tsserver.trace.server":"verbose"
+}
