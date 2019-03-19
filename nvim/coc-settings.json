@@ -8,7 +8,11 @@
             "initializationOptions": {
               "cacheDirectory": "/tmp/ccls"
             }
+        },
+        "glslls": {
+            "command": "glslls",
+            "args": ["--stdin"],
+            "filetypes": ["glsl"]
         }
-    },
-    "tsserver.trace.server":"verbose"
+    }
 }
