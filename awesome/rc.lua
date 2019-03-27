@@ -54,6 +54,7 @@ beautiful.init("~/.config/awesome/themes/diogen/theme.lua")
 terminal = "termite"
 browser = "firefox"
 geditor = "nvim-qt"
+screenlocker = "i3lock-fancy"
 systemmonitor = "gnome-system-monitor"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
@@ -351,7 +352,11 @@ globalkeys = gears.table.join(
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+              {description = "show the menubar", group = "launcher"}),
+
+    -- Lock screen
+    awful.key({ modkey, "Control" }, "l", function () awful.spawn( screenlocker ) end,
+              {description = "lock screen", group = "layout"})
 )
 
 clientkeys = gears.table.join(
@@ -611,4 +616,4 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 -- Run compton
-os.execute( "compton -b --config ~/.config/awesome/compton.conf &" )
+os.execute( "compton -b --paint-on-overlay --config ~/.config/awesome/compton.conf &" )
