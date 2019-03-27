@@ -74,6 +74,13 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+nmap <silent> sg :CocList -I grep <CR>
+nmap <silent> ss :CocList -I symbols <CR>
+nmap <silent> sb :CocList -I buffer <CR>
+
+map <silent>  S :CocListResume <CR>
+
+
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 function! s:show_documentation()
   if &filetype == 'vim'
