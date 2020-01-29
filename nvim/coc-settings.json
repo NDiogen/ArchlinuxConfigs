@@ -1,12 +1,11 @@
 {
     "languageserver": {
         "ccls": {
-            "command": "ccls",
-            "args": ["--log-file=/tmp/lsp-ccls.log"],
+            "command": "clangd",
+            "args": ["--background-index"],
             "filetypes": ["c", "cpp", "objc", "objcpp"],
-            "rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+            "rootPatterns": ["compile_commands.json"],
             "initializationOptions": {
-              "cacheDirectory": "/tmp/ccls"
             }
         },
         "glslls": {

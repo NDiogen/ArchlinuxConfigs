@@ -1,0 +1,50 @@
+{
+// Theme and colors
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Material Theme Ocean",
+    "editor.fontFamily": "Input Mono",
+    "customizeUI.font.regular": "Input Mono",
+    "customizeUI.font.monospace": "Input Mono",
+    "vim.easymotionMarkerFontFamily": "Input Mono",
+    "vim.easymotionMarkerBackgroundColor": "Black",
+    "vim.easymotionMarkerForegroundColorOneChar": "White",
+    "vim.easymotionMarkerForegroundColorTwoChar": "White",
+
+// Vim config
+    "vim.enableNeovim": true,
+    "vim.neovimPath": "/usr/bin/nvim",
+    "vim.hlsearch": true,
+    "vim.searchHighlightColor": "DarkGreen",
+    "vim.easymotion": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // EasyMotion keys
+        {
+            "before": ["<C-j>"],
+            "after": ["leader", "leader", "j"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["leader", "leader", "k"]
+        },
+        {
+            "before": ["<C-h>"],
+            "after": ["leader", "leader", "w"]
+        },
+        {
+            "before": ["<C-b>"],
+            "after": ["leader", "leader", "b"]
+        },
+        {
+            "before": ["q"],
+            "commands": [
+                "workbench.action.showCommands",
+            ]
+        },
+        {
+            "before": [ "s", "s" ],
+            "commands": [""]
+        },
+    ],
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 0,
+}

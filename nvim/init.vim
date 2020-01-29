@@ -15,7 +15,7 @@ Plug 'https://github.com/easymotion/vim-easymotion.git'
 
 "Syntax processing
 Plug 'https://github.com/sheerun/vim-polyglot.git'
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "Thermes
 Plug 'https://github.com/hewo/vim-colorscheme-deepsea.git'
