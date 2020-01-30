@@ -6,17 +6,7 @@
     },
     {
         "key": "ctrl+o",
-        "command": "-workbench.action.files.openLocalFile",
-        "when": "remoteFileDialogVisible"
-    },
-    {
-        "key": "ctrl+o",
-        "command": "-extension.vim_ctrl+o",
-        "when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl"
-    },
-    {
-        "key": "ctrl+o",
-        "command": "workbench.action.navigateBack"
+        "command": "extension.vim_ctrl+o"
     },
     {
         "key": "ctrl+alt+-",
@@ -24,57 +14,22 @@
     },
     {
         "key": "ctrl+i",
-        "command": "-extension.vim_ctrl+i",
-        "when": "editorTextFocus && vim.active && vim.use<C-i> && !inDebugRepl"
+        "command": "extension.vim_ctrl+i"
+    },
+// Cursors
+    {
+        "key": "Ctrl+j",
+        "command": "editor.action.addSelectionToNextFindMatch"
     },
     {
-        "key": "ctrl+i",
-        "command": "workbench.action.navigateForward"
-    },
-    {
-        "key": "ctrl+shift+-",
-        "command": "-workbench.action.navigateForward"
+        "key": "Ctrl+k",
+        "command": "editor.action.addSelectionToPreviousFindMatch"
     },
 
 // Search
     {
         "key": "shift+s",
         "command": "workbench.action.showCommands",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
-    },
-    {
-        "key": "s a",
-        "command": "workbench.action.gotoSymbol",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
-    },
-    {
-        "key": "s f",
-        "command": "workbench.action.quickOpen",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
-    },
-    {
-        "key": "s s",
-        "command": "workbench.action.showAllSymbols",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
-    },
-    {
-        "key": "s b",
-        "command": "workbench.action.showAllEditors",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
-    },
-    {
-        "key": "g d",
-        "command": "editor.action.goToDeclaration",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
-    },
-    {
-        "key": "g r",
-        "command": "editor.action.goToReferences",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
-    },
-    {
-        "key": "g g",
-        "command": "workbench.action.findInFiles",
         "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
     },
 
@@ -85,8 +40,7 @@
     },
     {
         "key": "alt+r",
-        "command": "workbench.action.tasks.runTask",
-        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+        "command": "workbench.action.tasks.runTask"
     },
 
 // EasyMotion vim rebindings

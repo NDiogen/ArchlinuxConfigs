@@ -10,6 +10,7 @@
     "vim.easymotionMarkerForegroundColorOneChar": "White",
     "vim.easymotionMarkerForegroundColorTwoChar": "White",
 
+    "editor.wordWrap": "on",
 // Vim config
     "vim.enableNeovim": true,
     "vim.neovimPath": "/usr/bin/nvim",
@@ -37,14 +38,51 @@
         {
             "before": ["q"],
             "commands": [
-                "workbench.action.showCommands",
+                "workbench.action.showCommands"
             ]
         },
+
+        // Search
         {
-            "before": [ "s", "s" ],
-            "commands": [""]
+            "before": [ "g", "a" ],
+            "commands": [ "workbench.action.gotoSymbol" ]
         },
+        {
+            "before": [ "g", "f" ],
+            "commands": [ "workbench.action.quickOpen" ]
+        },
+        {
+            "before": [ "g", "s" ],
+            "commands": [ "workbench.action.showAllSymbols" ]
+        },
+        {
+            "before": [ "g", "b" ],
+            "commands": [ "workbench.action.showAllEditors" ]
+        },
+        {
+            "before": [ "g", "d" ],
+            "commands": [ "editor.action.goToDeclaration" ]
+        },
+        {
+            "before": [ "g", "r" ],
+            "commands": [ "editor.action.goToReferences" ]
+        },
+        {
+            "before": [ "g", "<C-f>" ],
+            "commands": [ "workbench.action.findInFiles" ]
+        },
+        {
+            "before": [ "g", "r" ],
+            "commands": [ "editor.action.goToReferences" ]
+        },
+        // Debug
+        {
+            "before": [ "t", "b" ],
+            "commands": [ "editor.debug.action.toggleBreakpoint" ]
+        },
+
     ],
     "explorer.confirmDelete": false,
     "window.zoomLevel": 0,
+    "workbench.editor.showTabs": true,
 }
